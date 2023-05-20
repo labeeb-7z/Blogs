@@ -1,0 +1,25 @@
+title:              Labib Asari Blog
+email:              labeebasari@gmail.com
+description:        A Blog Theme by Start Bootstrap
+author:             Labib Asari
+baseurl:            "/Blogs"
+url:                "https://Gaurav17Joshi.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    labeeb-7z
+facebook_username:  
+instagram_username:  
+linkedin_username:  Labib Asari
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
