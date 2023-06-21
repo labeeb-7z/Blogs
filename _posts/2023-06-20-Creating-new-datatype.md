@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating a new Data Structure for pyGnuastro"
-subtitle: "Week 2 and 3"
+subtitle: "Week 3 and 4"
 date: 2023-06-14
 background: '/img/posts/GSoC.png'
 tags: gsoc
