@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a new Data Structure for pyGnuastro"
 subtitle: "Week 3 and 4"
-date: 2023-06-14
+date: 2023-06-20
 background: '/img/posts/GSoC.png'
 tags: gsoc
 ---
@@ -15,7 +15,7 @@ tags: gsoc
 This is done by representing all the data (acquired via input or created internally), regardless of its type, in a single data structure which encompasses the core data as well as metadata. This greatly assists in mainting uniformity.
 Internally all the data is represented in the form of a C struct : `gal_data_t`
 The following image describes how it keeps the core data as well as metadata : 
-![Code-Block1](({{site.baseurl}}/img/posts/creating-data-structure/gal_data_t.png))
+![Code-Block1]({{site.baseurl}}/img/posts/creating-data-structure/gal_data_t.png)
 
 Explaining each attribute of this structure will require a seperate post of itself :). Instead I'll focus on the main topic here : Since Im creating a python package for Gnuastro, and the `gal_data_t` is at the heart of this library, How do I represent this complex type in Python?!
 
