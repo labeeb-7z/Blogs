@@ -120,6 +120,7 @@ It is designed with SIMT/SIMD philosophy, which allow execution of multiple thre
 ## Results of Convolution on GPU for Gnuastro
 
 All tests were performed on a system with the following specifications:
+
 CPU : 
 
 - Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
@@ -148,4 +149,4 @@ The input image was a 10k x 20k FITS file with 32-bit floating point values. The
 
 ![GPU]({{site.baseurl}}/img/posts/gpus/gpu-result.png)
 
-The overall speedups seems to only be 3X but this also counts the time taken to transfer the data from CPU to GPU and back. If we only consider the time taken to perform the convolution, the speedup is around ~700X!.
+The overall speedups seems to only be 6X but this also counts the time taken to transfer the data from CPU to GPU and back. If we only consider the time taken to perform the convolution, the speedup is around ~700X!.
