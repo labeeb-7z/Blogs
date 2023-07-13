@@ -2,7 +2,7 @@
 layout: post
 title: "GPUs and Convolutions in Gnuastro"
 subtitle: "Week 5 and 6"
-date: 2023-07-04
+date: 2023-07-03
 background: '/img/posts/GSoC.png'
 tags: gsoc
 ---
@@ -70,7 +70,7 @@ Technically No
 - The maximum allowed threads depend on your GPUs compute capability.
 - But generally it’s so large, it always covers all your elements
 - For Compute Capability > 3.0
-    - Max Number of threads : (2^31)*(2^16)*(2^16)*(2*10) = 2^42!
+    - Max Number of threads : (2^31)x(2^16)x(2^16)x(2x10) = 2^42!
 
 
 ### Threads and Blocks :
@@ -91,9 +91,12 @@ Example :
 
 
 The above code Launches 
-32*32*1 = 1024 blocks
-Each having 16*16 = 256 threads
-Total no. of threads = 1024*256.
+
+32x32x1 = 1024 blocks
+
+Each having 16x16 = 256 threads
+
+Total no. of threads = 1024x256.
 
 ## CUDA Memory Hierarchy
 
