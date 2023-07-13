@@ -87,6 +87,7 @@ Blocks and Grids could be a 1D, 2D or 3D structures.
 When calling a GPU kernel, we specify the structure of each block, number of blocks, and number of threads/block - This is called the Execution Configuration.
 
 Example : 
+
 ![Launching a kernel example]({{site.baseurl}}/img/posts/gpus/launch-kernel.png)
 
 
