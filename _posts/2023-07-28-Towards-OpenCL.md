@@ -49,7 +49,7 @@ Basically each of the hardware manfacturers provide an implementation of the Ope
 
 Here's waht a typical OpenCL system looks like :
 
-![opencl-sytem](({{site.baseurl}}/img/posts/opencl/opencl-system.png))
+![opencl-sytem]({{site.baseurl}}/img/posts/opencl/opencl-system.png)
 
 
 OpenCL programs consist of two parts: host code and device code. The host code is written in C or C++ and runs on the host, while the device code is written in OpenCL C and runs on the device. The host code is responsible for setting up the OpenCL environment, creating the context, compiling the device code, and executing the kernels on the device.
