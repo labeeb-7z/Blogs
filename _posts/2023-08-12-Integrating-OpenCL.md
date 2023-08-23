@@ -61,15 +61,15 @@ GPU : NVIDIA GeForce GTX 1650
 
 Convolution using existing convolution in Gnuastro : 
 
-![Convolution using existing convolution in Gnuastro](/img/posts/opencl-imp/conv_cpu.png)
+![Convolution using existing convolution in Gnuastro]({{site.baseurl}}/img/posts/opencl-imp/conv_cpu.png)
 
 Convolution on OpenCL : 
 
-![Convolution on OpenCL](/img/posts/opencl-imp/conv_gpu.png)
+![Convolution on OpenCL]({{site.baseurl}}/img/posts/opencl-imp/conv_gpu.png)
 
 Result
 
-![Result](/img/posts/opencl-imp/res.png)
+![Result]({{site.baseurl}}/img/posts/opencl-imp/res.png)
 
 The speed up for convolution operation is specifically ranges from 300-500x, but for the entire operation its around 3-5x due to the overhead of copying data to and from the device. Overcoming this is a big and important challenge!
 
@@ -87,4 +87,4 @@ How do we solve this? Currently all the required pointers inside `gal_data_t` ar
 
 - **Data Transfer Overhead** : As mentioned multiple times, for using GPUs, we must copy data to and from the GPU memory. Astronomical datasets are huge, and copying them for each operation is a big overhead! Infact the data transfer overhead is so huge, that the actual operation is much faster than the data transfer. Adding more to that, its not just faster, its much much faster! So much so that the 90% of the time is spent in copying data to and from the GPU memory. It reduces performance by ~100x! 
 
-One solution we've figured is, when the External data is loaded for the first time in the program, we load it on the GPU memory instead of the CPU memory. This way, for each subsequent operation, we dont have to copy the data from CPU to GPU memory. 
+One solution we've figured is, when the External data is loaded for the first time in the program, we load it on the GPU memory instead of the CPU memory. This way, for each subsequent operation, we dont have to copy the data from CPU to GPU memory. After all the operations are done, we'll copy the result back to CPU memory and save it to the disk. This will avoid almost all the Data Transfer overhead.
