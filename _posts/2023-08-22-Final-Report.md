@@ -84,8 +84,7 @@ It was around 1st week of April now, I made my final proposal submission and had
 As mentioned in the GSoC proposal, we had to first focus on the Error handling and Python wrappers, so I started working on these two goals (I was also indeed selected for GSoC in the meantime!).
 
 
-5. **Convolutions on GPU** : After getting back to working with GPUs in around June-July, I started with implementing the [convolution function in CUDA]. Convolution is a direct operation as well as a subroutine to other operations in Gnuastro.
-
+5. **Convolutions on GPU** : After getting back to working with GPUs in around June-July, I started with implementing the convolution function in CUDA. Convolution is a direct operation as well as a subroutine to other operations in Gnuastro.
 The results of CUDA convolution were remarkable. We got upto 400x speed up on convolution operation! My mentor then suggested me since the speedup is very significant, I should prioritise getting more of GPU work done.
 Read more about Convolution on GPU in my blog [here](https://labeeb-7z.github.io/Blogs/2023/07/03/GPUs-and-Convolution.html).
 
