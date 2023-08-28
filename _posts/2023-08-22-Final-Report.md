@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Moving towards OpenCL"
-subtitle: "Week 7 and 8"
-date: 2023-07-28
+title: "Final GSoC Report"
+subtitle: "What Why and How"
+date: 2023-08-22
 background: '/img/posts/GSoC.png'
 tags: gsoc
 ---
